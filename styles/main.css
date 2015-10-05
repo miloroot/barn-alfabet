@@ -4,4 +4,41 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body {
+  margin: 0 auto; }
+
+.wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  header:last-child {
+    margin-right: 0; }
+
+.letterzone {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .letterzone:last-child {
+    margin-right: 0; }
+
+footer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 150px; }
+  footer:last-child {
+    margin-right: 0; }
+
 /*# sourceMappingURL=main.css.map */

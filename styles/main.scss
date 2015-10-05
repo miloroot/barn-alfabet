@@ -1,2 +1,23 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+
+body {
+  margin: 0 auto;
+}
+
+.wrapper {
+  @include outer-container;
+}
+
+header {
+  @include span-columns(12);
+}
+
+.letterzone {
+  @include span-columns(12);
+}
+
+footer {
+  @include span-columns(12);
+  margin-top: 150px;
+}
