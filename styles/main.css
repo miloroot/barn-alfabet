@@ -32,6 +32,15 @@ header {
   .letterzone:last-child {
     margin-right: 0; }
 
+.letter {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  font-size: 68px; }
+  .letter:last-child {
+    margin-right: 0; }
+
 footer {
   float: left;
   display: block;
