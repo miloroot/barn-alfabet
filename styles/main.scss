@@ -11,15 +11,30 @@ body {
 
 header {
   @include span-columns(12);
+  background-color: #FFAECF;
+}
+
+header h1 {
+  margin-left: 20px;
+  font-family: 'Courgette', cursive;
+  text-shadow: 2px 2px #FF99BA;
 }
 
 .letterzone {
   @include span-columns(12);
+  text-align: center;
 }
 
 .letter {
   @include span-columns(3);
+  margin-left: 70px;
+  font-family: 'Open Sans', sans-serif;
   font-size: 68px;
+  //border: 1px solid #000;
+}
+
+.letter:hover {
+  color: lightgreen;
 }
 
 footer {

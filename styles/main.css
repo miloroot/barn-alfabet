@@ -20,15 +20,22 @@ header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  background-color: #FFAECF; }
   header:last-child {
     margin-right: 0; }
+
+header h1 {
+  margin-left: 20px;
+  font-family: 'Courgette', cursive;
+  text-shadow: 2px 2px #FF99BA; }
 
 .letterzone {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .letterzone:last-child {
     margin-right: 0; }
 
@@ -37,9 +44,14 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+  margin-left: 70px;
+  font-family: 'Open Sans', sans-serif;
   font-size: 68px; }
   .letter:last-child {
     margin-right: 0; }
+
+.letter:hover {
+  color: lightgreen; }
 
 footer {
   float: left;
