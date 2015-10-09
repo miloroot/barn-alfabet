@@ -4,7 +4,8 @@ $( function() {
 
   var $letterzone = $( '.letterzone' ),
       $startTag = '<div class="letter">',
-      $endTag = '</div>'
+      $endTag = '</div>',
+      $letter = $( '.letter' )
 
   var alphabet = [
     "A",
@@ -40,6 +41,13 @@ $( function() {
 
   for( var i = 0; i < alphabet.length; i++ ) {
     $letterzone.append( $startTag + alphabet[i] + $endTag )
+    var thisLetter = alphabet[i]
+  }
+
+  $letterzone.on( 'click', getLetter )
+
+  function getLetter( e ) {
+    console.log( 'the letter clicked: ', e.target.innerHTML )
   }
 
 })
