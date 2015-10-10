@@ -5,7 +5,8 @@ $( function() {
   var $letterzone = $( '.letterzone' ),
       $startTag = '<div class="letter">',
       $endTag = '</div>',
-      $letter = $( '.letter' )
+      $letter = $( '.letter' ),
+      $writer = $( '.writer')
 
   var alphabet = [
     "A",
@@ -48,6 +49,7 @@ $( function() {
 
   function getLetter( e ) {
     console.log( 'the letter clicked: ', e.target.innerHTML )
+    $writer.append( e.target.innerHTML )
   }
 
 })

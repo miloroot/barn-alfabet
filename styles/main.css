@@ -31,6 +31,10 @@ header h1 {
   color: pink;
   text-shadow: 2px 2px #FF99BA; }
 
+.writer {
+  font-size: 68px;
+  font-family: 'Open Sans', sans-serif; }
+
 .letterzone {
   float: left;
   display: block;

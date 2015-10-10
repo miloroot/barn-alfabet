@@ -21,6 +21,11 @@ header h1 {
   text-shadow: 2px 2px #FF99BA;
 }
 
+.writer {
+  font-size: 68px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .letterzone {
   @include span-columns(12);
   text-align: center;
