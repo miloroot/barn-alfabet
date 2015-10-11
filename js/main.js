@@ -49,7 +49,14 @@ $( function() {
 
   function getLetter( e ) {
     console.log( 'the letter clicked: ', e.target.innerHTML )
-    $writer.append( e.target.innerHTML )
+    console.log( 'the length of innerHTML: ', e.target.innerHTML.length )
+
+    if( e.target.innerHTML.length < 2 ) {
+      $writer.append( e.target.innerHTML )
+    }
+    else {
+      $writer.append( " " )
+    }
   }
 
 })
