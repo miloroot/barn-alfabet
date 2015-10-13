@@ -42,7 +42,6 @@ $( function() {
 
   for( var i = 0; i < alphabet.length; i++ ) {
     $letterzone.append( $startTag + alphabet[i] + $endTag )
-    var thisLetter = alphabet[i]
   }
 
   $letterzone.on( 'click', getLetter )
