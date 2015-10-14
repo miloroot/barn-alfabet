@@ -54,7 +54,7 @@ $( function() {
       $writer.append( e.target.innerHTML );
     }
     else {
-      $writer.append( " " );
+      $writer.append( null );
     }
   }
 

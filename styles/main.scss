@@ -25,11 +25,16 @@ header h1 {
   font-size: 68px;
   font-family: 'Open Sans', sans-serif;
   margin-left: 50px;
+  height: 180px;
+  max-width: 980px;
+  border-bottom: 1px solid lightblue;
+  visibility: visible;
 }
 
 .letterzone {
   @include span-columns(12);
   text-align: center;
+  margin-top: 40px;
 }
 
 .letter {

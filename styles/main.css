@@ -34,14 +34,19 @@ header h1 {
 .writer {
   font-size: 68px;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 50px; }
+  margin-left: 50px;
+  height: 180px;
+  max-width: 980px;
+  border-bottom: 1px solid lightblue;
+  visibility: visible; }
 
 .letterzone {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 40px; }
   .letterzone:last-child {
     margin-right: 0; }
 
