@@ -8,37 +8,15 @@ $( function() {
       $letter = $( '.letter' ),
       $writer = $( '.writer');
 
-  var alphabet = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
-    "Å",
-    "Ä",
-    "Ö"
-  ];
+      var alphabet = [
+        "A", "B", "C", "D",
+        "E", "F", "G", "H",
+        "I", "J", "K", "L",
+        "M", "N", "O", "P",
+        "Q", "R", "S", "T",
+        "U", "V", "W", "X",
+        "Y", "Z", "Å", "Ä",
+        "Ö" ];
 
   for( var i = 0; i < alphabet.length; i++ ) {
     $letterzone.append( $startTag + alphabet[i] + $endTag )
@@ -47,8 +25,6 @@ $( function() {
   $letterzone.on( 'click', getLetter );
 
   function getLetter( e ) {
-    console.log( 'the letter clicked: ', e.target.innerHTML );
-    console.log( 'the length of innerHTML: ', e.target.innerHTML.length );
 
     if( e.target.innerHTML.length < 2 ) {
       $writer.append( e.target.innerHTML );
