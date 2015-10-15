@@ -8,17 +8,25 @@ var AlphabetModule = ( function( window, undefined ) {
       $writer = $( '.writer');
 
   // alphabet array
-  var alphabet = [ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Å", "Ä", "Ö" ];
+  var alphabet = [
+    "A", "B", "C", "D",
+    "E", "F", "G", "H",
+    "I", "J", "K", "L",
+    "M", "N", "O", "P",
+    "Q", "R", "S", "T",
+    "U", "V", "W", "X",
+    "Y", "Z", "Å", "Ä",
+    "Ö" ];
 
-  // loops through array and appends it to DOM element.
-  function letterLoop() {
+  // loops through given param and appends it to DOM element.
+  function appendLetters() {
     for (var i = 0; i < alphabet.length; i++) {
       $letterzone.append( $startTag + alphabet[i] + $endTag );
     }
   }
 
   // function for click event, for when a letter gets clicked.
-  function letterClicked() {
+  function clickedLetter() {
     $letterzone.on( 'click', getLetter );
   }
 
@@ -37,8 +45,8 @@ var AlphabetModule = ( function( window, undefined ) {
   // return methods.
   // name used to initialize method is to the left. Name of function is to the right.
   return {
-    showAllLetters : letterLoop,
-    makeLettersClickable : letterClicked
+    showAllLetters : appendLetters,
+    makeLettersClickable : clickedLetter
   };
 } )( window );
 
