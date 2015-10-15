@@ -7,6 +7,7 @@ body {
 
 .wrapper {
   @include outer-container;
+  max-width: 980px;
 }
 
 header {
@@ -24,9 +25,9 @@ header h1 {
 .writer {
   font-size: 68px;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 50px;
+  margin-left: 0px;
   height: 180px;
-  max-width: 980px;
+  max-width: 100%;
   border-bottom: 3px solid lightblue;
   visibility: visible;
 }
@@ -39,7 +40,7 @@ header h1 {
 
 .letter {
   @include span-columns(3);
-  margin-left: 70px;
+  margin-left: 60px;
   font-family: 'Open Sans', sans-serif;
   font-size: 68px;
   cursor: default;

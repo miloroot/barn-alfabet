@@ -25,7 +25,6 @@ $( function() {
   $letterzone.on( 'click', getLetter );
 
   function getLetter( e ) {
-
     if( e.target.innerHTML.length < 2 ) {
       $writer.append( e.target.innerHTML );
     }
