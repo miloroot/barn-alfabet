@@ -5,7 +5,9 @@ var AlphabetModule = ( function( window, undefined ) {
       $startTag = '<div class="letter">',
       $endTag = '</div>',
       $letter = $( '.letter' ),
-      $writer = $( '.writer');
+      $writer = $( '.writer'),
+      $writerGameModeButton = $( '.writermode' ),
+      $showOneLetterGameModeButton = $( '.onelettermode' );
 
   // Array containing the alphabet.
   var alphabet = [
@@ -17,6 +19,19 @@ var AlphabetModule = ( function( window, undefined ) {
     "U", "V", "W", "X",
     "Y", "Z", "Å", "Ä",
     "Ö" ];
+
+  // Setting "writer"-game mode as default (true).
+  // And setting "show-one-letter"-game mode as optional (false).
+  var writerGameMode = true;
+  var showOneLetterGameMode = false;
+
+  // Doing a check of wich game mode is active.
+  if( writerGameMode == true && showOneLetterGameMode == false ) {
+    console.log( "Writer game mode is activated." );
+  }
+  else if ( writerGameMode == false && showOneLetterGameMode == true ) {
+    console.log( "Show one letter game mode is activated." );
+  }
 
   // Loops through alphabet array above and appends it to the element ".letterzone".
   function appendLetters() {
